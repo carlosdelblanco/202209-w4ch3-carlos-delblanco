@@ -1,10 +1,7 @@
 import { createContext } from "react";
 
 interface TelephoneContextStructure {
-  telePhoneNumber: number[];
-  call: boolean;
-  addNumber: (pressKey: number) => void;
-  deleteNumber: () => void;
+  message: string;
 }
 
 const TelephoneContext = createContext<TelephoneContextStructure>(
