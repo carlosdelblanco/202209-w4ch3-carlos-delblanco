@@ -1,5 +1,5 @@
 import { useCallback, useState } from "react";
-import TelephoneContext from "../TelephoneContext";
+import TelephoneContext from "./TelephoneContext";
 
 interface TelephoneContextProviderProps {
   children: JSX.Element | JSX.Element[];
