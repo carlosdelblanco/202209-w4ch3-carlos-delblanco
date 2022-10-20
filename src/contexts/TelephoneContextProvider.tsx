@@ -1,5 +1,5 @@
-import { useCallback, useState } from "react";
-import TelephoneContext from "../TelephoneContext";
+import { useState } from "react";
+import TelephoneContext from "./TelephoneContext";
 
 interface TelephoneContextProviderProps {
   children: JSX.Element | JSX.Element[];
@@ -8,8 +8,8 @@ interface TelephoneContextProviderProps {
 const TelephoneContextProvider = ({
   children,
 }: TelephoneContextProviderProps): JSX.Element => {
-  const [number, setNumber] = useState("");
-  const [isCalling, setIsCalling] = useState(false);
+  const [number] = useState("");
+  const [isCalling] = useState(false);
 
   return (
     <TelephoneContext.Provider value={{ number, isCalling }}>
